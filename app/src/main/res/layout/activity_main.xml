@@ -1,69 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
 
-    <androidx.core.widget.NestedScrollView
-        android:id="@+id/nestedScrollView2"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_weight="1"
-        android:fillViewport="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        tools:ignore="MissingConstraints">
-
-        <LinearLayout
+    <androidx.cardview.widget.CardView
+            android:id="@+id/header_layout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:elevation="15dp">
 
-            <androidx.recyclerview.widget.RecyclerView
+        <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-        </LinearLayout>
+                android:layout_height="match_parent">
 
-    </androidx.core.widget.NestedScrollView>
+            <ImageView
+                    android:id="@+id/camera_img"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_camera"/>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nestedScrollView2"
-        tools:ignore="MissingConstraints" />
+            <ImageView
+                    android:id="@+id/insta_img"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_insta"
+                    android:layout_centerInParent="true" />
 
-    <com.ismaeldivita.chipnavigation.ChipNavigationBar
-        android:id="@+id/bottomNavMenu"
-        android:layout_width="0dp"
-        android:layout_height="44dp"
-        android:layout_alignParentBottom="true"
-        android:elevation="8dp"
-        app:cnb_menuResource="@menu/menu_bottom"
-        app:cnb_orientationMode="horizontal"
-        app:cnb_radius="8dp"
-        app:cnb_unselectedColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingClass,MissingConstraints" />
+            <ImageView
+                    android:id="@+id/send_img"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="15dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_send"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/header_layout"
+            android:layout_above="@+id/bottom_layout"/>
+
+    <androidx.cardview.widget.CardView
+            android:id="@+id/bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:elevation="15dp"
+            android:layout_alignParentBottom="true">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <ImageView
+                        android:id="@+id/home_icon"
+                        android:layout_width="@dimen/bottom_menu_size"
+                        android:layout_height="@dimen/bottom_menu_size"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/menu_margin"
+                        android:src="@drawable/ic_black_home"
+                />
+
+                <ImageView
+                        android:id="@+id/search_icon"
+                        android:layout_width="@dimen/bottom_menu_size"
+                        android:layout_height="@dimen/bottom_menu_size"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@+id/add_icon"
+                        android:layout_toEndOf="@+id/home_icon"
+                        android:src="@drawable/ic_big_search"
+                />
+
+                <ImageView
+                        android:id="@+id/add_icon"
+                        android:layout_width="@dimen/bottom_menu_size"
+                        android:layout_height="@dimen/bottom_menu_size"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ic_big_add"
+                />
+
+                <ImageView
+                        android:id="@+id/heart_icon"
+                        android:layout_width="@dimen/bottom_menu_size"
+                        android:layout_height="@dimen/bottom_menu_size"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@+id/profile_icon"
+                        android:layout_toEndOf="@+id/add_icon"
+                        android:src="@drawable/ic_big_heart"
+                />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile_icon"
+                        android:layout_width="@dimen/bottom_menu_size"
+                        android:layout_height="@dimen/bottom_menu_size"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="@dimen/menu_margin"
+                        android:src="@drawable/profile"
+                />
+
+            </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
