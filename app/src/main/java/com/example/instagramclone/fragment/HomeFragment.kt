@@ -23,11 +23,11 @@ class HomeFragment : Fragment() {
 
         val activity = activity as Context
 
-        val instaStausList = view.findViewById<RecyclerView>(R.id.insta_status_list)
-        val postViewList = view.findViewById<RecyclerView>(R.id.post_list)
+        //val instaStausList = view.findViewById<RecyclerView>(R.id.insta_status_list)
+        //val postViewList = view.findViewById<RecyclerView>(R.id.post_list)
 
-        instaStausList.layoutManager = LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false)
-        postViewList.layoutManager = LinearLayoutManager(activity, LinearLayoutManager.VERTICAL, false)
+       // instaStausList.layoutManager = LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false)
+     //   postViewList.layoutManager = LinearLayoutManager(activity, LinearLayoutManager.VERTICAL, false)
 
         val statusJSON: String = activity.assets.open("status.json").bufferedReader().use { it.readText() }
         val postJSON: String = activity.assets.open("post.json").bufferedReader().use { it.readText() }
@@ -45,10 +45,10 @@ class HomeFragment : Fragment() {
             postList.add(Post(post[j].id, post[j].name, post[j].logo, post[j].photo, post[j].likes, post[j].description))
 
         val statusAdapter = StatusAdapter(activity,statusList)
-        instaStausList.adapter = statusAdapter
+    //    instaStausList.adapter = statusAdapter
 
         val postAdapter = PostAdapter(activity, postList)
-        postViewList.adapter = postAdapter
+     //   postViewList.adapter = postAdapter
 
         return view
     }

@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">InstagramClone</string>
+
+    <!-- common -->
+    <string name="user_name"> </string>
+    <string name="common_verify">Doğrula</string>
+    <string name="common_continue">Devam Et</string>
+    <string name="common_back">Geri</string>
+    <string name="common_comment">AÇIKLAMA</string>
+    <string name="common_name">AD</string>
+    <string name="common_surname">SOYAD</string>
+    <string name="common_email">E-POSTA ADRESİ</string>
 </resources>
