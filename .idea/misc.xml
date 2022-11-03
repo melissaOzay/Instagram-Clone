@@ -6,7 +6,8 @@
         <entry key="..\:/Users/Melisa/Desktop/InstagramClone/app/src/main/res/drawable-v24/profile_backgound.xml" value="0.332" />
         <entry key="..\:/Users/Melisa/Desktop/InstagramClone/app/src/main/res/drawable-v24/textview_backgound.xml" value="0.331" />
         <entry key="..\:/Users/Melisa/Desktop/InstagramClone/app/src/main/res/drawable/ic_launcher_background.xml" value="0.329" />
-        <entry key="..\:/Users/Melisa/Desktop/InstagramClone/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/Melisa/Desktop/InstagramClone/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/Melisa/Desktop/InstagramClone/app/src/main/res/layout/activity_sign_on_layout.xml" value="0.22" />
         <entry key="..\:/Users/Melisa/Desktop/InstagramClone/app/src/main/res/layout/adapter_post_layout.xml" value="0.25" />
         <entry key="..\:/Users/Melisa/Desktop/InstagramClone/app/src/main/res/layout/adapter_status_layout.xml" value="0.2171875" />
         <entry key="..\:/Users/Melisa/Desktop/InstagramClone/app/src/main/res/layout/fragment_favourite.xml" value="0.2171875" />
@@ -16,6 +17,8 @@
         <entry key="..\:/Users/Melisa/Desktop/InstagramClone/app/src/main/res/layout/fragment_profile.xml" value="0.33" />
         <entry key="..\:/Users/Melisa/Desktop/InstagramClone/app/src/main/res/layout/fragment_search.xml" value="0.2171875" />
         <entry key="..\:/Users/Melisa/Desktop/InstagramClone/app/src/main/res/layout/fragment_sign_on_layout.xml" value="0.33" />
+        <entry key="..\:/Users/Melisa/Desktop/InstagramClone/app/src/main/res/layout/fragment_sign_up.xml" value="0.22" />
+        <entry key="..\:/Users/Melisa/Desktop/InstagramClone/app/src/main/res/layout/fragment_tagging.xml" value="0.1" />
         <entry key="..\:/Users/Melisa/Desktop/InstagramClone/app/src/main/res/layout/intagram_post.xml" value="0.33" />
         <entry key="..\:/Users/Melisa/Desktop/InstagramClone/app/src/main/res/layout/item_home.xml" value="0.3489583333333333" />
         <entry key="..\:/Users/Melisa/Desktop/InstagramClone/app/src/main/res/menu/menu_bottom.xml" value="0.3489583333333333" />

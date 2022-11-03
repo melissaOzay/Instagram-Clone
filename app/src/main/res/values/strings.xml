@@ -10,4 +10,6 @@
     <string name="common_name">AD</string>
     <string name="common_surname">SOYAD</string>
     <string name="common_email">E-POSTA ADRESİ</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
