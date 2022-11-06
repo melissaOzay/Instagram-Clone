@@ -35,7 +35,7 @@
         app:cnb_textColor="@color/black"
         android:title="" />
     <item
-        android:id="@+id/Profile"
+        android:id="@+id/profile"
         android:icon="@drawable/ic_baseline_person_24"
         app:cnb_backgroundColor="@color/white"
         app:cnb_iconColor="#E81B1B"

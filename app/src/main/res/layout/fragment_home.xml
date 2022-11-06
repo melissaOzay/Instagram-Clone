@@ -4,5 +4,10 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+    <com.example.instagramclone.ui.components.InstagramPost
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.example.instagramclone.ui.components.InstagramPost>
 
 </RelativeLayout>
